@@ -40,11 +40,12 @@ MAS sits above the Model Layer (LLMs) and below the User Interface. It acts as t
       └───────────┬──────────────┘
                   ▼
       ┌──────────────────────────┐
-      │   Master Orchestrator    │◄──────┐ (Global State Machine)
-      │ (Task Decomposition)     │       │
-      └─────┬───────────┬────────┘       │
-            │           │                │
-     ┌──────▼─────┐ ┌───▼────────┐  ┌────┴────────┐
+      │   Master Orchestrator    │◄───────┐ (Global State Machine)
+      │ (Task Decomposition)     │        │
+      └─────┬────────────┬───────┘        │
+            │            │                │
+            ▼            ▼                │
+     ┌─────────────┐ ┌────────────┐  ┌────┴────────┐
      │ Verification│ │ RTL Design │  │ DFT / Power │
      │   Agent     │ │   Agent    │  │   Agent     │
      │ (Tool: VCS) │ │ (Tool: Py) │  │ (Tool: Tool)│
