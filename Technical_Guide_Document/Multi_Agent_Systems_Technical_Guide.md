@@ -1,4 +1,4 @@
----
+
 # Multi-Agent Systems: Technical Implementation Guide
 ## From Atomic AI Functions to Agentic Swarms in Complex Engineering Environments
 
